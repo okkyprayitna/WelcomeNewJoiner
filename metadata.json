@@ -1,0 +1,6 @@
+{
+  "name": "Year-End Team Night | Rooftop Gala",
+  "description": "Festive one-page event invitation and guide for Year-End Team Night featuring live countdown, rooftop agenda, navy & gold dress code, venue directions, and Google Form RSVP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

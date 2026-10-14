@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cinzel', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #060b17;
+    color: #e2e8f0;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-display {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Gold shimmer & metallic gradient utilities */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fef3c7 0%, #f6c445 35%, #d4af37 70%, #fffbeb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-subtle {
+  background: linear-gradient(135deg, #fde68a 0%, #d4af37 60%, #b45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold-subtle {
+  border-color: rgba(212, 175, 55, 0.25);
+}
+
+.bg-gold-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.15) 0%, rgba(6, 11, 23, 0) 70%);
+}
+
+.bg-navy-card {
+  background-color: rgba(11, 20, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.btn-gold-primary {
+  background: linear-gradient(135deg, #f6c445 0%, #d4af37 50%, #c49b28 100%);
+  color: #070c18;
+  font-weight: 700;
+  box-shadow: 0 4px 20px -2px rgba(212, 175, 55, 0.35);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-gold-primary:hover {
+  background: linear-gradient(135deg, #fde047 0%, #eab308 50%, #ca8a04 100%);
+  box-shadow: 0 6px 26px -2px rgba(212, 175, 55, 0.55);
+  transform: translateY(-1px);
+}
+
+.btn-gold-primary:active {
+  transform: translateY(1px);
+}
+
+/* Starfield / Sparkle background */
+.stars-overlay {
+  background-image: 
+    radial-gradient(1px 1px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 120px 80px, rgba(254, 240, 138, 0.8), rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 240px 190px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 340px 70px, rgba(253, 224, 71, 0.9), rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 480px 240px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 600px 120px, rgba(254, 240, 138, 0.7), rgba(0,0,0,0));
+  background-repeat: repeat;
+  background-size: 650px 350px;
+}
